@@ -10,7 +10,7 @@ class ProseEdda(commands.Cog, name="Prose Edda"):
     def __init__(self, bot):
         self.bot = bot
         self.paginator = commands.Paginator(max_size=1000)
-        with open("prose_edda.txt") as f:
+        with open("prose_edda_new.txt") as f:
             for line in f.readlines():
                 self.paginator.add_line(line)
 
